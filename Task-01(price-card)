@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product curd</title>
+
+
+    <style>
+      
+    .background-image {
+        height: 100vh;
+        background-image: url('https://img.pikbest.com/wp/202344/nature-reserve-a-natural-background-showcasing-the-energy-of-large-chunks-dark-gray-charcoal-coal_9933205.jpg!sw800');
+        background-size: cover;
+        background-position: center;
+        color: ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    .product-card {
+        background-color: darkgray;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.2s;
+        width: 300px;
+        height: 500px; 
+        margin: 10px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between; 
+    }
+
+    .product-image {
+        width: 80%;
+        height: auto;
+        margin: 10px auto; 
+    }
+
+    .product-title {
+        font-size: 1.5em;
+        margin: 10px 0;
+    }
+
+    .product-description {
+        color: black;
+        padding: 0 15px;
+        margin: 0; 
+        flex-grow: 1;
+    }
+
+    .product-price {
+        font-size: 1.3em;
+        color: brown;
+        margin: 10px 0;
+    }
+
+    @media (max-width: 600px) {
+        .product-card {
+            width: auto;
+            height:100%;
+        }
+    }
+
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="background-image">
+
+        <div class="product-card">
+
+            <h2 class="product-title">Shoes For Men</h2>
+
+            <img src="https://ae01.alicdn.com/kf/S346be568c1d04206bd51ffef5214f789V/Men-Mesh-Breathable-Comfortable-Jogging-Trainer-Shoes-Outdoor-Walking-Black-Sneakers-Fashion-Couple-Casual-Sports-Shoes.jpg"
+                alt="Men Shoes" class="product-image">
+            <div class="product-info">
+
+                <h3 class="product-description">Fashion Couple Casual Sports Shoes Men Mesh Breathable Comfortable
+                    Jogging Trainer Shoes Outdoor Walking Black Sneakers</h3>
+                <span class="product-price">Rs-3000/</span>
+                <h2> <a
+                        href="https://www.daraz.lk/products/fashion-couple-casual-sports-shoes-men-mesh-breathable-comfortable-jogging-trainer-shoes-outdoor-walking-black-sneakers-i249684627-s1523947860.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Ashoes%252Bfor%252Bmen%253Bnid%253A249684627%253Bsrc%253ALazadaMainSrp%253Brn%253A12c8e12d11928cf0831f7b8925c8fae8%253Bregion%253Alk%253Bsku%253A249684627_LK%253Bprice%253A3174%253Bclient%253Adesktop%253Bsupplier_id%253A1000193840551%253Bbiz_source%253Ahttps%253A%252F%252Fwww.daraz.lk%252F%253Bslot%253A17%253Butlog_bucket_id%253A470687%253Basc_category_id%253A1811%253Bitem_id%253A249684627%253Bsku_id%253A1523947860%253Bshop_id%253A242605%253BtemplateInfo%253A1103_B_L%2523&configId=choice_LK_promotion&freeshipping=1&fs_ab=1&fuse_fs=&lang=en&location=Overseas&price=3174&priceCompare=skuId%3A1523947860%3Bsource%3Alazada-search-voucher%3Bsn%3A12c8e12d11928cf0831f7b8925c8fae8%3BunionTrace%3A2141112517274176887524121ea6db%3BoriginPrice%3A317400%3BvoucherPrice%3A317400%3BdisplayPrice%3A317400%3BsinglePromotionId%3A50000004768009%3BsingleToolCode%3AshopPromPrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3Btimestamp%3A1727417689031&ratingscore=4.166666666666667&request_id=12c8e12d11928cf0831f7b8925c8fae8&review=16&sale=124&search=1&source=search&spm=a211g0.searchlist.list.17&stock=1&upItemIds=249684627">BUY
+                        NOW</a> </h2>
+            </div>
+        </div>
+
+        <div class="product-card">
+
+            <h2 class="product-title">Pepsi & Cola</h2>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAq7MWg1V6I8M1yka5G65MZnfBUoc2jYPBpw&s"
+                alt="Product Image" class="product-image">
+            <div class="product-info">
+
+                <h3 class="product-description">Low in Sugar Coca Cola High Quality Imported 320ml Orginal Can Tin Rasa Asli Low Calorie</h3>
+                <span class="product-price">Rs-1,995/</span>
+                <h2> <a
+                        href="https://www.daraz.lk/products/fashion-couple-casual-sports-shoes-men-mesh-breathable-comfortable-jogging-trainer-shoes-outdoor-walking-black-sneakers-i249684627-s1523947860.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Ashoes%252Bfor%252Bmen%253Bnid%253A249684627%253Bsrc%253ALazadaMainSrp%253Brn%253A12c8e12d11928cf0831f7b8925c8fae8%253Bregion%253Alk%253Bsku%253A249684627_LK%253Bprice%253A3174%253Bclient%253Adesktop%253Bsupplier_id%253A1000193840551%253Bbiz_source%253Ahttps%253A%252F%252Fwww.daraz.lk%252F%253Bslot%253A17%253Butlog_bucket_id%253A470687%253Basc_category_id%253A1811%253Bitem_id%253A249684627%253Bsku_id%253A1523947860%253Bshop_id%253A242605%253BtemplateInfo%253A1103_B_L%2523&configId=choice_LK_promotion&freeshipping=1&fs_ab=1&fuse_fs=&lang=en&location=Overseas&price=3174&priceCompare=skuId%3A1523947860%3Bsource%3Alazada-search-voucher%3Bsn%3A12c8e12d11928cf0831f7b8925c8fae8%3BunionTrace%3A2141112517274176887524121ea6db%3BoriginPrice%3A317400%3BvoucherPrice%3A317400%3BdisplayPrice%3A317400%3BsinglePromotionId%3A50000004768009%3BsingleToolCode%3AshopPromPrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3Btimestamp%3A1727417689031&ratingscore=4.166666666666667&request_id=12c8e12d11928cf0831f7b8925c8fae8&review=16&sale=124&search=1&source=search&spm=a211g0.searchlist.list.17&stock=1&upItemIds=249684627">BUY
+                        NOW</a> </h2>
+            </div>
+        </div>
+
+        <div class="product-card">
+
+            <h2 class="product-title">Cadbury-Dairy-Milk</h2>
+
+            <img src="https://objectstorage.ap-mumbai-1.oraclecloud.com/n/softlogicbicloud/b/cdn/o/products/600-600/123145--01--1678764262.jpeg"
+                alt="Product Image" class="product-image">
+            <div class="product-info">
+
+                <h3 class="product-description">Cadbury Dairy Milk Roasted Almonds Chocolate 160g</h3>
+                <span class="product-price">Rs-950/</span>
+                <h2> <a
+                        href="https://www.daraz.lk/products/cadbury-dairy-milk-roasted-almonds-160g-i135593365-s1054165760.html?c=&channelLpJumpArgs=&clickTrackInfo=query%253Achocolate%253Bnid%253A135593365%253Bsrc%253ALazadaMainSrp%253Brn%253A203c4f9ed08dfd6ed11ecaecf501ce92%253Bregion%253Alk%253Bsku%253A135593365_LK%253Bprice%253A950%253Bclient%253Adesktop%253Bsupplier_id%253A1000123599513%253Bbiz_source%253Ah5_external%253Bslot%253A3%253Butlog_bucket_id%253A470687%253Basc_category_id%253A7214%253Bitem_id%253A135593365%253Bsku_id%253A1054165760%253Bshop_id%253A95585%253BtemplateInfo%253A1103_B_L%2523&freeshipping=0&fs_ab=1&fuse_fs=&lang=en&location=Western&price=9.5E%202&priceCompare=skuId%3A1054165760%3Bsource%3Alazada-search-voucher%3Bsn%3A203c4f9ed08dfd6ed11ecaecf501ce92%3BunionTrace%3A2140f53817274299343225694e1c68%3BoriginPrice%3A95000%3BvoucherPrice%3A95000%3BdisplayPrice%3A95000%3BsinglePromotionId%3A-1%3BsingleToolCode%3AmockedSalePrice%3BvoucherPricePlugin%3A1%3BbuyerId%3A0%3Btimestamp%3A1727429934641&ratingscore=4.8471337579617835&request_id=203c4f9ed08dfd6ed11ecaecf501ce92&review=157&sale=985&search=1&source=search&spm=a2a0e.searchlist.list.3&stock=1">BUY
+                        NOW</a> </h2>
+            </div>
+        </div>
+
+        
+
+    </div>
+</body>
+
+</html

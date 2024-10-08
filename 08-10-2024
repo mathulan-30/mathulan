@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators</title>
+    <style>
+       
+        h1 {
+            color: red; 
+
+        h2 {
+            color:rgb(165, 42, 128);
+        }
+    </style>
+   
+</head>
+
+<body>
+    
+    <h1><a href="https://www.w3schools.com/js/js_operators.asp">Operators</a></h1>
+
+
+    <h2>
+        <u> Arithmetic Operators </u>
+    </h2>
+
+    <script>
+        let a = 10;
+        let b = 2;
+
+        
+        let c = a + b; 
+        let d = a - b; 
+        let e = a * b; 
+        let f = a / b;
+        let g = a % b; 
+        let h = a++;   
+        let i = a--;   
+
+        
+        document.write("Addition = " + c + "<br>");
+        document.write("Subtraction = " + d + "<br>");
+        document.write("Multiplication = " + e + "<br>");
+        document.write("Division = " + f + "<br>");
+        document.write("Modulus = " + g + "<br>");
+        document.write("Post-increment (h) = " + h + "<br>");
+        document.write("Post-decrement (i) = " + i + "<br>");
+    </script>
+    <br>
+    <h2> <u> Comparison Operators</h2> </u>
+
+    <script>
+        /* Equal to (==): Checks for equality.
+Strict Equal to (===): Checks for equality and type.
+Not Equal to (!=): Checks for inequality.
+Strict Not Equal to (!==): Checks for inequality and type.
+Greater than (>)
+Less than (<)
+Greater than or equal to (>=)
+Less than or equal to (<=)
+        */
+
+        let aa = 5;
+        let bb = 1;
+        document.write(aa == bb);
+        document.write("<br>");
+        document.write(aa != bb);
+        document.write("<br>");
+        document.write(aa === bb);
+        document.write("<br>");
+        document.write(aa + bb);
+        document.write("<br>");
+        document.write(aa !== bb);
+        document.write("<br>");
+        document.write(aa > bb);
+        document.write("<br>");
+        document.write(aa < bb);
+        document.write("<br>");
+        document.write(aa >= bb);
+    </script>
+    <br>
+    <h2><u>Logical Operators</u></h2>
+
+    <script>
+        let m = 5;
+        let t = 10;
+        document.write(m > 2 || t > 5);
+
+    </script>
+
+    <br>
+<h2><u>Assignment Operators</u></h2>
+    <script>
+        let p = 1;
+        let n = 5;
+       // p += n;
+        p=p+n;
+        document.write(p);
+
+
+    </script>
+
+</body>
+
+</html>

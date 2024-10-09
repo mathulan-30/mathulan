@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://thumbs.dreamstime.com/b/shades-dark-blue-geometric-background-shades-dark-blue-geometric-background-illustration-three-depth-dimension-mystery-intrigue-321196184.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 20px;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+        .car-list {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease;
+            max-width: 600px;
+            margin: auto;
+        }
+        .car-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .car-item:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .car-image {
+            width: 60px;
+            height: auto;
+            margin-right: 15px;
+            border-radius: 5px;
+        }
+        .car-name {
+            color: #2c3e50; /* Change this to your desired color */
+            font-weight: bold; /* Optional: Make the font bold */
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>List of Cars</h1>
+    <div class="car-list" id="carList"></div>
+
+    <script>
+        // Array of car names and images
+        const cars = [
+            { name: "Toyota", image: "https://img-optimize.toyota-europe.com/resize/ccis/680x680/zip/nl/configurationtype/visual-for-grade-selector/product-token/6f40a557-2449-4519-9bc0-82b336e6db31/grade/9373a371-00bf-4e80-bf75-f8644cb8c949/body/7b77d85b-8f26-4645-82ac-22154a7d6293/fallback/true/padding/50,50,50,50/image-quality/70/day-exterior-4.png" },
+            { name: "Honda", image: "https://automobiles.honda.com/-/media/Honda-Automobiles/Vehicles/2025/civic-sedan/non-VLP/10-Family/MY25_Civic_Family_Card_Jelly_2x.png?sc_lang=en" },
+            { name: "Ford", image: "https://www.rizzaford.com/static/dealer-21184/24-ford-expedition.jpg" },
+            { name: "Chevrolet", image: "https://upload.wikimedia.org/wikipedia/commons/0/07/Chevy_%2814467564735%29.jpg" },
+            { name: "Nissan", image: "https://imgd.aeplcdn.com/370x208/n/cw/ec/173325/magnite-facelift-exterior-right-front-three-quarter-2.jpeg?isig=0" }
+        ];
+
+        // Initialize an empty string to hold the HTML for car items
+        let text = "";
+
+        // Loop through the array
+        for (let i = 0; i < cars.length; i++) {
+            text += `
+                <div class="car-item">
+                    <img src="${cars[i].image}" alt="${cars[i].name} logo" class="car-image">
+                    <span class="car-name">${cars[i].name}</span>
+                </div>
+            `;
+        }
+
+        // Display the list of cars in the HTML
+        document.getElementById("carList").innerHTML = text;
+    </script>
+
+</body>
+</html>

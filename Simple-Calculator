@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made by Mathu</title>
+    <style>
+        body {
+            background-image: url('https://slidechef.net/wp-content/uploads/2021/10/Free-Google-Slides-Math-Background.jpg');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 5%;
+        }
+
+        input {
+            font-size: 2rem;
+            padding: 15px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 80%; 
+            max-width: 300px; 
+        }
+
+        button {
+            font-size: 2rem;
+            padding: 15px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            flex: 1; 
+            max-width: 120px; 
+        }
+
+       
+        .add-button {
+            background-color: green; 
+        }
+        
+        .subtract-button {
+            background-color: red; 
+        }
+
+        .multiply-button {
+            background-color: blue; 
+        }
+
+        .divide-button {
+            background-color: orange; 
+        }
+
+        button:hover {
+            background-color: darkcyan;
+        }
+
+        #result {
+            font-size: 2rem; 
+            padding: 15px; 
+            margin: 20px 0;
+            background-color: rgba(143, 152, 143, 0.7); 
+            border-radius: 5px;
+            display: inline-block; 
+            width: 80%; 
+            max-width: 300px; 
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: center; 
+            margin-bottom: 10px; 
+        }
+    </style>
+
+    <h1><u>Simple Calculator</u></h1>
+</head>
+<body>
+    <input type="number" id="input1" placeholder="Enter first number" />
+    <input type="number" id="input2" placeholder="Enter second number" />
+    
+    <div id="result">Result : .......</div>
+    
+    <div class="button-row">
+        <button class="add-button" onclick="add()">+</button>
+        <button class="subtract-button" onclick="subtract()">-</button>
+    </div>
+    
+    <div class="button-row">
+        <button class="multiply-button" onclick="multiply()">*</button>
+        <button class="divide-button" onclick="divide()">/</button>
+    </div>
+
+    <script>
+        function add() {
+            const num1 = parseFloat(document.getElementById('input1').value) || 0;
+            const num2 = parseFloat(document.getElementById('input2').value) || 0;
+            document.getElementById('result').innerText = `Result: ${num1 + num2}`;
+        }
+
+        function subtract() {
+            const num1 = parseFloat(document.getElementById('input1').value) || 0;
+            const num2 = parseFloat(document.getElementById('input2').value) || 0;
+            document.getElementById('result').innerText = `Result: ${num1 - num2}`;
+        }
+
+        function multiply() {
+            const num1 = parseFloat(document.getElementById('input1').value) || 0;
+            const num2 = parseFloat(document.getElementById('input2').value) || 0;
+            document.getElementById('result').innerText = `Result: ${num1 * num2}`;
+        }
+
+        function divide() {
+            const num1 = parseFloat(document.getElementById('input1').value) || 0;
+            const num2 = parseFloat(document.getElementById('input2').value) || 0;
+
+            if (num2 === 0) {
+                document.getElementById('result').innerText = 'Result: Cannot divide by zero';
+            } else {
+                document.getElementById('result').innerText = `Result: ${num1 / num2}`;
+            }
+        }
+    </script>
+</body>
+</html>
